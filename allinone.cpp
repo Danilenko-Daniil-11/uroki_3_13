@@ -1,15 +1,16 @@
 #include <iostream>
-
 using namespace std;
+void tasks(int task);
 
 int main() {
+    setlocale(LC_ALL, "Russian");
     int task;
     cout << "Введите номер задачи (1-4): ";
     cin >> task;
     tasks(task);
     return 0;
 }
-void tasks(task){
+void tasks(int task){
 
     if (task == 1) {
         cout << "Найти и вывести наибольшее, среднее и наименьшее числа, если все они разные." << endl;
@@ -101,5 +102,7 @@ void tasks(task){
     } else {
         cout << "Неверный выбор." << endl;
     }
- 
+
 }
+
+
